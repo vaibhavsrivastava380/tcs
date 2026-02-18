@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>TCS Clone</title>
+</head>
+
+<body>
+
+
+
+    <header class="header" id="header">
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-overlay__content">
+                <svg class="search-overlay__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                        stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <input type="text" class="search-overlay__input" id="search-input"
+                    placeholder="What are you looking for?">
+                <div class="search-overlay__close" id="search-close">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="header__hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="header__tcslogo">
+            <img class="header__section--logo" src="./assets/tcs logo.svg" alt="TCS LOGO">
+        </div>
+
+        <div class="header__divider"></div>
+
+        <nav class="header__nav">
+            <div class="header__nav--content" id="nav-trigger-what">What we do</div>
+            <div class="header__nav--content" id="nav-trigger-who">Who we are</div>
+            <div class="header__nav--content" id="nav-trigger-insights">Insights</div>
+            <div class="header__nav--content" id="nav-trigger-careers">Careers</div>
+            <div class="header__nav--content" id="nav-trigger-investors">Investors</div>
+        </nav>
+
+        <div class="header__extra">
+            <div class="header__extra--another">CONTACT US</div>
+            <div class="header__extra--another">TCS WORLDWIDE</div>
+        </div>
+
+        <div class="header__search" id="search-trigger">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+
+        <div class="header__tatalogo">
+            <img src="./assets/tata logo.svg" alt="tata logo" class="header__section--tatalogo">
+        </div>
+    </header>
+
+    <div class="modal-nav" id="modal-what">
+        <div class="modal-nav__sidebar">
+            <div class="modal-nav__item active" data-target="overview">Overview <span class="arrow"><svg width="64px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="industries">Industries <span class="arrow"><svg width="64px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="services">Services <span class="arrow"><svg width="64px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="products">Products and Platforms <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+            <div class="modal-nav__item" data-target="research">Research & Innovation <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+        </div>
+        <div class="modal-nav__content">
+            <div id="overview" class="modal-nav__pane active">
+                <h1 class="modal-nav__title">TCS is here to make a difference through technology.</h1>
+                <p class="modal-nav__desc">Leading the way in innovation for over 50 years, we build greater futures for
+                    businesses across multiple industries and 131 countries.</p>
+                <button class="modal-nav__btn">Discover all solutions</button>
+            </div>
+            <div id="industries" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Banking</span>
+                    <span>Education</span>
+                    <span>Life Sciences</span>
+                    <span>Capital Markets</span>
+                    <span>Energy, Resources, and Utilities</span>
+                    <span>Manufacturing</span>
+                    <span>Consumer Goods and Distribution</span>
+                    <span>Healthcare</span>
+                    <span>Public Services</span>
+                    <span>Communications, Media, and Information Services</span>
+                    <span>High Tech</span>
+                    <span>Retail</span>
+                    <span>Insurance</span>
+                    <span>Travel and Logistics</span>
+                </div>
+            </div>
+            <div id="services" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Cloud</span>
+                    <span>Cybersecurity</span>
+                    <span>IoT and Digital Engineering</span>
+                    <span>Cognitive Business Operations</span>
+                    <span>Data and Analytics</span>
+                    <span>TCS Interactive</span>
+                    <span>Consulting</span>
+                    <span>Enterprise Solutions</span>
+                    <span>Sustainability Services</span>
+                </div>
+            </div>
+            <div id="products" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>TCS ADD</span>
+                    <span>Education</span>
+                    <span>Life Sciences</span>
+                    <span>TCS BANCS</span>
+                    <span>Energy, Resources, and Utilities</span>
+                    <span>Manufacturing</span>
+                    <span>TCS BFSI Platforms</span>
+                    <span>Healthcare</span>
+                    <span>Public Services</span>
+                    <span>TCS CHROMA</span>
+                    <span>High Tech</span>
+                    <span>Retail</span>
+                    <span>Insurance</span>
+                    <span>Travel and Logistics</span>
+                </div>
+            </div>
+            <div id="research" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>TCS Research</span>
+                    <span>TCS Pace</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-nav" id="modal-who">
+        <div class="modal-nav__sidebar">
+            <div class="modal-nav__item active" data-target="who-overview">Overview <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="who-about">About Us <span class="arrow"><svg width="24px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="who-news">In the news <span class="arrow"><svg width="24px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+        </div>
+        <div class="modal-nav__content">
+            <div id="who-overview" class="modal-nav__pane active">
+                <h1 class="modal-nav__title">We’re in it for good, driving positive change for the benefit of all.</h1>
+                <p class="modal-nav__desc">Our expert, committed team put our shared beliefs into action – every day.
+                    Together, we combine innovation and collective knowledge to create the extraordinary.</p>
+                <button class="modal-nav__btn">Discover the difference</button>
+            </div>
+            <div id="who-about" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Corporate Sustainability</span>
+                    <span>Corporate Social Responsibility</span>
+                    <span>Sports Sponsorships</span>
+                    <span>Diversity, Equity, and Inclusion</span>
+                    <span>The TCS Way</span>
+                    <span>Alliances</span>
+                </div>
+            </div>
+            <div id="who-news" class="modal-nav__pane">
+                <div class="modal-nav__news">
+                    <h3 class="modal-news__title">RECENT NEWS</h3>
+
+                    <div class="modal-news__item">
+                        <p class="modal-news__date">13 Mar 2023</p>
+                        <p class="modal-news__text">TCS Debuts on Forbes List of America's Best Large Employers</p>
+                    </div>
+
+                    <div class="modal-news__item">
+                        <p class="modal-news__date">06 Mar 2023</p>
+                        <p class="modal-news__text">TCS Named a Top Employer in the UAE, Saudi Arabia and South Africa
+                        </p>
+                    </div>
+
+                    <a href="#" class="modal-news__link">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-nav" id="modal-insights">
+        <div class="modal-nav__sidebar">
+            <div class="modal-nav__item active" data-target="insights-overview">Overview <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+            <div class="modal-nav__item" data-target="insights-topics">Topics <span class="arrow"><svg width="24px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="insights-industries">Industries <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+        </div>
+        <div class="modal-nav__content">
+            <div id="insights-overview" class="modal-nav__pane active">
+                <h1 class="modal-nav__title">Explore the future through our insights and research.</h1>
+                <p class="modal-nav__desc">Get cutting-edge insights to stay ahead. Dive into our expert analysis on
+                    technology, business, and industry trends.</p>
+                <button class="modal-nav__btn">Read insights</button>
+            </div>
+            <div id="insights-topics" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Artificial Intelligence</span>
+                    <span>Blockchain</span>
+                    <span>Cloud Computing</span>
+                    <span>Cybersecurity</span>
+                    <span>Digital Marketing</span>
+                    <span>Internet of Things</span>
+                </div>
+            </div>
+            <div id="insights-industries" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Retail</span>
+                    <span>Finance</span>
+                    <span>Healthcare</span>
+                    <span>Manufacturing</span>
+                    <span>Telecommunications</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-nav" id="modal-careers">
+        <div class="modal-nav__sidebar">
+            <div class="modal-nav__item active" data-target="careers-overview">Overview <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+            <div class="modal-nav__item" data-target="careers-jobs">Opportunities <span class="arrow"><svg width="64px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="careers-life">Life at TCS <span class="arrow"><svg width="64px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+        </div>
+        <div class="modal-nav__content">
+            <div id="careers-overview" class="modal-nav__pane active">
+                <h1 class="modal-nav__title">Join our global team and shape the future.</h1>
+                <p class="modal-nav__desc">Empower your career with meaningful work and a world-class environment. Your
+                    journey to excellence starts here.</p>
+                <button class="modal-nav__btn">Explore careers</button>
+            </div>
+            <div id="careers-jobs" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Experienced Professionals</span>
+                    <span>Entry Level Hire</span>
+                    <span>Diversity Hiring</span>
+                    <span>Campus Hiring</span>
+                </div>
+            </div>
+            <div id="careers-life" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Culture</span>
+                    <span>Learning</span>
+                    <span>Inclusion</span>
+                    <span>Sports</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-nav" id="modal-investors">
+        <div class="modal-nav__sidebar">
+            <div class="modal-nav__item active" data-target="investors-overview">Overview <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+            <div class="modal-nav__item" data-target="investors-reports">Reports <span class="arrow"><svg width="24px"
+                        height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span></div>
+            <div class="modal-nav__item" data-target="investors-governance">Governance <span class="arrow"><svg
+                        width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#fff"
+                                d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+        </div>
+        <div class="modal-nav__content">
+            <div id="investors-overview" class="modal-nav__pane active">
+                <h1 class="modal-nav__title">Delivering consistent value to our stakeholders.</h1>
+                <p class="modal-nav__desc">Access real-time financial data, reports, and news updates. Our transparency
+                    is the key to your trust.</p>
+                <button class="modal-nav__btn">Investor relations</button>
+            </div>
+            <div id="investors-reports" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Annual Reports</span>
+                    <span>Quarterly Results</span>
+                    <span>Stock Information</span>
+                    <span>SEC Filings</span>
+                </div>
+            </div>
+            <div id="investors-governance" class="modal-nav__pane">
+                <div class="modal-nav__grid">
+                    <span>Board of Directors</span>
+                    <span>Policies</span>
+                    <span>Contact Info</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="filters">
+        <div class="filters__feature active">All</div>
+        <div class="filters__feature">Research</div>
+        <div class="filters__feature">News</div>
+        <div class="filters__feature">Production</div>
+        <div class="filters__feature">Blog</div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card__left">
+                <div class="card__left_img_wrapper">
+                    <img src="./assets/cards/card2.png" alt="image of card" class="img__card">
+                </div>
+            </div>
+            <div class="card__right">
+                <div class="card__right__title">TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster</div>
+                <div class="card__right__disc">TCS InQuizitive videos show how students performed in the quarter,
+                    semifinal, and national final rounds. Watch all the school quiz competition videos here.</div>
+                <div class="card__right__tag">Research</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__left">
+                <div class="card__left_img_wrapper">
+                    <img src="./assets/cards/card3.png" alt="image of card" class="img__card">
+                </div>
+            </div>
+            <div class="card__right">
+                <div class="card__right__title">TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster</div>
+                <div class="card__right__disc">TCS InQuizitive videos show how students performed in the quarter,
+                    semifinal, and national final rounds. Watch all the school quiz competition videos here.</div>
+                <div class="card__right__tag">Research</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__left">
+                <div class="card__left_img_wrapper">
+                    <img src="./assets/cards/card2.png" alt="image of card" class="img__card">
+                </div>
+            </div>
+            <div class="card__right">
+                <div class="card__right__title">TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster</div>
+                <div class="card__right__disc">TCS InQuizitive videos show how students performed in the quarter,
+                    semifinal, and national final rounds. Watch all the school quiz competition videos here.</div>
+                <div class="card__right__tag">News</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__left">
+                <div class="card__left_img_wrapper">
+                    <img src="./assets/cards/card4.png" alt="image of card" class="img__card">
+                </div>
+            </div>
+            <div class="card__right">
+                <div class="card__right__title">TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster</div>
+                <div class="card__right__disc">TCS InQuizitive videos show how students performed in the quarter,
+                    semifinal, and national final rounds. Watch all the school quiz competition videos here.</div>
+                <div class="card__right__tag">Production</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__left">
+                <div class="card__left_img_wrapper">
+                    <img src="./assets/cards/card5.png" alt="image of card" class="img__card">
+                </div>
+            </div>
+            <div class="card__right">
+                <div class="card__right__title">TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster</div>
+                <div class="card__right__disc">TCS InQuizitive videos show how students performed in the quarter,
+                    semifinal, and national final rounds. Watch all the school quiz competition videos here.</div>
+                <div class="card__right__tag">Blog</div>
+            </div>
+        </div>
+        <div id="scroll-sentinel" style="height: 20px;"></div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

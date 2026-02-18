@@ -1,0 +1,74 @@
+[
+    {
+        "title": "TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster",
+        "description": "TCS InQuizitive videos show how students performed in the quarter, semifinal, and national final rounds. Watch all the school quiz competition videos here.",
+        "tag": "Research",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "TCS and British Council Collaborate to Improve Digital Skills",
+        "description": "This partnership aims to reach over 20,000 young people across the UK, providing them with the tools they need to succeed in a digital world.",
+        "tag": "News",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "Harnessing AI for Sustainable Global Supply Chains",
+        "description": "A new research report exploring how artificial intelligence can be used to optimize logistics while reducing carbon footprints.",
+        "tag": "Production",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "TCS Named as a Leader in the Everest Group Life Sciences",
+        "description": "The report highlights TCS' focus on building comprehensive solutions for the life sciences industry, leveraging its strong domain expertise.",
+        "tag": "Research",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "Digital Transformation in Sports: The TCS Way",
+        "description": "Discover how TCS is revolutionizing the sports experience through technology and sponsorship across major marathons.",
+        "tag": "Blog",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "Cybersecurity Trends for 2024: Staying Ahead of Threats",
+        "description": "Experts at TCS share their top predictions and strategies for protecting enterprise data in an increasingly complex threat landscape.",
+        "tag": "Insights",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "TCS InQuizitive: Watch Quiz Videos of Students and Quizmaster",
+        "description": "TCS InQuizitive videos show how students performed in the quarter, semifinal, and national final rounds. Watch all the school quiz competition videos here.",
+        "tag": "Research",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "TCS and British Council Collaborate to Improve Digital Skills",
+        "description": "This partnership aims to reach over 20,000 young people across the UK, providing them with the tools they need to succeed in a digital world.",
+        "tag": "News",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "Harnessing AI for Sustainable Global Supply Chains",
+        "description": "A new research report exploring how artificial intelligence can be used to optimize logistics while reducing carbon footprints.",
+        "tag": "Production",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "TCS Named as a Leader in the Everest Group Life Sciences",
+        "description": "The report highlights TCS' focus on building comprehensive solutions for the life sciences industry, leveraging its strong domain expertise.",
+        "tag": "Research",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "Digital Transformation in Sports: The TCS Way",
+        "description": "Discover how TCS is revolutionizing the sports experience through technology and sponsorship across major marathons.",
+        "tag": "Blog",
+        "image": "./assets/cards/card3.png"
+    },
+    {
+        "title": "Cybersecurity Trends for 2024: Staying Ahead of Threats",
+        "description": "Experts at TCS share their top predictions and strategies for protecting enterprise data in an increasingly complex threat landscape.",
+        "tag": "Insights",
+        "image": "./assets/cards/card3.png"
+    }
+]

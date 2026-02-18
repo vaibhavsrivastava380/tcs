@@ -1,0 +1,25 @@
+@mixin div_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint ==mobile {
+    @media (max-width: #{$tablet-view - 1px}) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==tablet {
+    @media (min-width: #{$tablet-view}) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==desktop {
+    @media (min-width: #{$desktop-view}) {
+      @content;
+    }
+  }
+}

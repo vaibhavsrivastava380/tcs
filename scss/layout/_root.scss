@@ -1,0 +1,14 @@
+@import "../abstract/variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-montserrat;
+    // background-color: $header-background;
+    color: $header-text;
+    overflow-x: hidden;
+}
